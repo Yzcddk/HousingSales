@@ -1,0 +1,322 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarBackgroundColor":"#22c993",
+				// "navigationBarTextStyle":"white",
+				// "navigationBarTitleText":"安家",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"app-plus":{
+					 // 隐藏滚动条
+					"scrollIndicator":"none",
+					"titleNView":{
+						"backgroundColor":"#22c993",
+							// 搜索栏
+						"searchInput":{
+							"align":"center",
+							"backgroundColor":"#F7F7F7",
+							"placeholder":"买房卖房都在安家",
+							"placeholderColor":"#cccdcd",
+							"disabled":"true"//是否允许搜索
+						},
+						"buttons":[
+							{
+								// left
+								"color":"#F7F7F7",
+								// "background":""
+								"float":"left",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/icon.ttf",
+								"text":"\ue62f"
+							},
+							{
+								// right
+								"color":"#F7F7F7",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/icon.ttf",
+								"text":"\ue661"
+							}
+						]
+					}
+				}
+			} 
+		},{
+			"path": "pages/found/home/home",
+			"style": {
+				// "navigationBarTitleText": "发现"
+				"app-plus":{
+					 // 隐藏滚动条
+					"scrollIndicator":"none",
+					"titleNView":{
+						"backgroundColor":"#FFFFFF",
+							// 搜索栏
+						"searchInput":{
+							"align":"left",
+							"backgroundColor":"#f5f5f5",
+							"placeholder":"搜索你感兴趣的咨询/问答",
+							"placeholderColor":"#cfd2d2",
+							"disabled":"true"//是否允许搜索
+						},
+						"buttons":[
+							{
+								// right
+								"color":"#a3e7a5",
+								"float":"right",
+								"fontSize":"22px",
+								"fontSrc":"/static/font/icon.ttf",
+								"text":"\ue605"
+							}
+						]
+					}
+				}
+			} 
+		},{
+			"path": "pages/user/user",
+			"style": {
+				// 我的
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"app-plus":{
+					 // 隐藏滚动条
+					"scrollIndicator":"none",
+					"titleNView":{
+						"backgroundColor":"#22c993"
+					}
+				}
+			} 
+		},{
+		    "path" : "pages/found/details/details",
+		    "style" : {
+				"navigationBarTitleText" : "详情",
+				"app-plus": {
+					"titleNView":{
+						"backgroundColor":"#22c993"
+					},
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/found/details/videoDetails",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"app-plus": {
+					"titleNView":{
+						"backgroundColor":"#22c993"
+					},
+					"titleNView": false,
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		},{
+			"path": "pages/user/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor":"#22c993",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+		            "bounce": "none" ,//关闭窗口回弹效果
+					"softinputNavBar":"none"
+		        }
+			}
+		},
+		{
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "注册账号",
+				"navigationBarBackgroundColor":"#22c993",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+				    "bounce": "none" ,//关闭窗口回弹效果
+					"softinputNavBar":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/user/resetpasswd",
+			"style": {
+				"navigationBarTitleText": "重置密码",
+				"navigationBarBackgroundColor":"#22c993",
+				"navigationBarTextStyle":"white",
+				"app-plus": {
+				    "bounce": "none" ,//关闭窗口回弹效果
+					"softinputNavBar":"none"
+				}
+			}
+		},{
+            "path" : "pages/user/setting",
+            "style" : {
+				"navigationBarBackgroundColor":"#f8f8f8",
+				"navigationBarTitleText":"我的设置",
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#f3f3f3"
+			}
+        },
+		{
+			"path": "pages/search/index_search",
+			"style": {
+				"app-plus":{
+					 // 隐藏滚动条
+					"scrollIndicator":"none",
+					"titleNView":{
+						
+						"autoBackButton":"false",
+						"backgroundColor":"#22c993",
+							// 搜索栏
+						"searchInput":{
+							"autoFocus":"true",
+							"align":"left",
+							"backgroundColor":"#F7F7F7",
+							"placeholder":"搜索你感兴趣的咨询/问答",
+							"placeholderColor":"#cccdcd",
+							"disabled":"false"//是否允许搜索
+						},
+						"buttons":[
+						
+							{
+								// right
+								"color":"#F7F7F7",
+								"float":"right",
+								"fontSize":"18px",
+								"text":"取消"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/search/found_search",
+			"style": {
+				"app-plus":{
+					 // 隐藏滚动条
+					"scrollIndicator":"none",
+					"titleNView":{
+						"autoBackButton":"false",
+						"backgroundColor":"#22c993",
+							// 搜索栏
+						"searchInput":{
+							"autoFocus":"true",
+							"align":"left",
+							"backgroundColor":"#F7F7F7",
+							"placeholder":"搜索你感兴趣的咨询/问答",
+							"placeholderColor":"#cccdcd",
+							"disabled":"false"//是否允许搜索
+						},
+						"buttons":[
+						
+							{
+								// right
+								"color":"#F7F7F7",
+								"float":"right",
+								"fontSize":"18px",
+								"text":"取消"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+            "path" : "pages/goods/goods-list/goods-list",
+            "style" : {
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        },
+		{
+		    "path" : "pages/goods/goods",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance":50,
+				"h5":{
+					"titleNView":false
+				},
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+		},{
+            "path" : "pages/goods/ratings/ratings",
+            "style" : {
+				"navigationBarTitleText":"商品评论",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"backgroundColorTop":"#ffffff",
+				"backgroundColorBottom":"#ffffff"
+			}
+        },
+		{
+		    "path" : "pages/message/msg",
+		    "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "消息列表",
+				"navigationBarBackgroundColor":"#22c993",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+		    "path" : "pages/message/message",
+		    "style" : {
+				"navigationBarTitleText":"消息",
+		    	"navigationBarBackgroundColor":"#22c993",
+		    	"backgroundColorTop":"#e5e5e5",
+		    	"backgroundColorBottom":"#e5e5e5",
+				"navigationBarTextStyle":"white",
+		    	"app-plus":{
+		    		"softinputNavBar":"none",
+		    		"bounce":"none"
+		    	}
+		    }
+		}
+		
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "安家",
+		// 导航栏颜色
+		"navigationBarBackgroundColor": "#FFFFFF",
+		// 底部颜色
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"color":"#454e4d",
+		"selectedColor":"#23cc91",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/tabbar/home.png",
+				"selectedIconPath":"static/tabbar/homed.png"
+			},{
+				"pagePath":"pages/message/msg",
+				"text":"消息",
+				"iconPath":"static/tabbar/msg.png",
+				"selectedIconPath":"static/tabbar/msged.png"
+			},{
+				"pagePath":"pages/found/home/home",
+				"text":"发现",
+				"iconPath":"static/tabbar/found.png",
+				"selectedIconPath":"static/tabbar/founded.png"
+			},{
+				"pagePath":"pages/user/user",
+				"text":"我的",
+				"iconPath":"static/tabbar/user.png",
+				"selectedIconPath":"static/tabbar/usered.png"
+			}
+		]
+	}
+}
